@@ -74,33 +74,33 @@ plt.show()
 #Closures by Volunteer
 Volunteer_Closures = BBBS_Novice_df[BBBS_Novice_df["Closure Initiator"].str.contains("Volunteer")]
 Volunteer_contingency_table = pd.crosstab(Volunteer_Closures['Program Type'], Volunteer_Closures['Closure Reason'])
-Volunteer_contingency_table.plot(kind='bar', stacked=False, figsize=(12, 6))
+Volunteer_contingency_table.plot(kind='bar', stacked=False, figsize=(16, 6))
 plt.title('Closures initiated by Volunteer by Program Type')
 plt.xlabel('Program Type')
 plt.ylabel('Count')
-plt.xticks(rotation=45)
+plt.xticks(rotation=0)
 plt.legend(title='Closure Reason', bbox_to_anchor=(1.05, 1))
 plt.show()
 
 #Closures by child and/or family
 Family_Closures = BBBS_Novice_df[BBBS_Novice_df["Closure Initiator"].str.contains("Child", "Child/Family")]
 Family_contingency_table = pd.crosstab(Family_Closures['Program Type'], Family_Closures['Closure Reason'])
-Family_contingency_table.plot(kind='bar', stacked=False, figsize=(12, 6))
+Family_contingency_table.plot(kind='bar', stacked=False, figsize=(16, 6))
 plt.title('Closures initiated by Child and/or Family by Program Type')
 plt.xlabel('Program Type')
 plt.ylabel('Count')
-plt.xticks(rotation=45)
+plt.xticks(rotation=0)
 plt.legend(title='Closure Reason', bbox_to_anchor=(1.05, 1))
 plt.show()
 
 #Closures by agency
 Agency_Closures = BBBS_Novice_df[BBBS_Novice_df["Closure Initiator"].str.contains("Agency")]
 Agency_contingency_table = pd.crosstab(Agency_Closures['Program Type'], Agency_Closures['Closure Reason'])
-Agency_contingency_table.plot(kind='bar', stacked=False, figsize=(12, 6))
+Agency_contingency_table.plot(kind='bar', stacked=False, figsize=(16, 6))
 plt.title('Closures initiated by Agency by Program Type')
 plt.xlabel('Program Type')
 plt.ylabel('Count')
-plt.xticks(rotation=45)
+plt.xticks(rotation=0)
 plt.legend(title='Closure Reason', bbox_to_anchor=(1.05, 1))
 plt.show()
 

@@ -7,8 +7,8 @@ from sklearn.metrics import mean_squared_error
 from sklearn.linear_model import LinearRegression
 
 
-BBBS_train_df = pd.read_excel("Training-Restated.xlsx")
-BBBS_test_df = pd.read_excel("Test-Truncated-Restated.xlsx")
+BBBS_train_df = pd.read_excel("./undergrade/Training-Restated.xlsx")
+BBBS_test_df = pd.read_excel("./undergrade/Test-Truncated-Restated.xlsx")
 predictions = "Testset_Predictions_Submit.csv"
 
 
